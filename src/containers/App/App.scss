@@ -3,7 +3,22 @@
 $block: '.#{variables.$ns}app';
 
 #{$block} {
-    max-width: 1280px;
-    margin-inline: auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > div {
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid rgba(69, 115, 152, 0.99);
+    padding: 5px;
 }
